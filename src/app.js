@@ -1,33 +1,19 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+window.onload = function() {
+  const pronouns = ["the", "our"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+  const adjectives = ["great", "big"];
 
-window.onload = function() 
-{
-  const pronouns = ["the","our"];
+  const nouns = ["jogger", "racoon"];
 
-  const adjs = ["great","big"];
+  const extens = [".com", ".us", ".io", ".es"];
 
-  const nouns = ["jogger","racoon"];
-
-  const extens = [".com",".us",".io",".es"];
-
-  for (let pronoun of pronouns) 
-  {
-    for (let adj of adjs) 
-    {
-      for (let noun of nouns) 
-      {
-        for (let exten of extens) 
-        {
-          console.log(pronoun,adj,noun,exten);
+  for (let pronoun of pronouns) {
+    for (let adj of adjectives) {
+      for (let noun of nouns) {
+        for (let exten of extens) {
+          console.log(pronoun + adj + noun + exten);
         }
       }
     }
   }
 };
-
-console.log("Hello Rigo from the console!");
